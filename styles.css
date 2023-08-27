@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #29416d;
+}
+
+.topNav {
+    display: flex;
+    background-color: #222;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 6px 2px #0b111d;
+}
+
+/* Using rem instead of px, for scalability (px doesn't scale well) */
+/* Using rem instead of em, so that the title text will scale relative to the entire nav element and not the span element containing the text */
+.siteBrand {
+    font-size: 1.5rem;
+    margin-top: .5rem;
+    margin-left: .5rem;
+    margin-bottom: .25rem;
+}
+
+.siteBrand img {
+    height: 48px;
+    border: 2px dashed #fff;
+    border-radius: 50%;
+}
+
+.navLinks ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navLinks li {
+    list-style: none;
+}
+
+.navLinks li a {
+    text-decoration: none;
+    padding: 1.25rem;
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navLinks a:hover {
+    background-color: #444;
+}
+
+.navToggleButton {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 21px;
+}
+
+.hamburger {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+
+@media (max-width: 600px) {
+    .topNav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navToggleButton {
+        display: flex;
+    }
+
+    .navLinks {
+        display: block;
+    }
+
+
+}
