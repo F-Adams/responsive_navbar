@@ -84,7 +84,18 @@ body {
 
     .navLinks {
         display: block;
+        width: 100%;
     }
 
+    .navLinks ul {
+        flex-direction: column;
+    }
 
+    .navLinks li {
+        text-align: center;
+    }
+
+    .navLinks li a {
+        padding: 1rem;
+    }
 }
