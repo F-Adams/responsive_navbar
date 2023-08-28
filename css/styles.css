@@ -9,6 +9,63 @@ body {
     background-color: #29416d;
 }
 
+/* Media Queries */
+/* =========================================== */
+@media only screen and (min-width: 320px) {
+    .contact-container img {
+        height: 24px;
+        margin: 0 5px;
+    }
+}
+
+
+@media only screen and (min-width: 480px) {
+    .contact-container img {
+        height: 36px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .contact-container img {
+        height: 48px;
+    }
+}
+
+@media (max-width: 600px) {
+    .topNav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navToggleButton {
+        display: flex;
+    }
+
+    .navLinks {
+        display: none;
+        width: 100%;
+    }
+
+    .navLinks.active {
+        display: flex;
+    }
+
+    .navLinks ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navLinks ul li {
+        text-align: center;
+    }
+
+    .navLinks ul li a {
+        padding: 1rem;
+    }
+}
+
+/* Top Navigation Menu */
+/* =========================================== */
 .topNav {
     display: flex;
     background-color: #222;
@@ -69,6 +126,9 @@ body {
     background-color: #fff;
 }
 
+
+/* Content styles */
+/* =========================================== */
 .titleBox {
     width: 25%;
     padding: 1.5rem;
@@ -83,6 +143,8 @@ body {
     box-shadow: 4px 8px 8px #0b111d;
 }
 
+/* Footer Contact Menu */
+/* =========================================== */
 .contact-container {
     background: #141527;
     display: flex;
@@ -116,57 +178,4 @@ body {
     -webkit-filter: grayscale(0);
     transform: scale(1.01);
     -webkit-transform: scale(1.00);
-}
-
-@media only screen and (min-width: 320px) {
-    .contact-container img {
-        height: 24px;
-        margin: 0 5px;
-    }
-}
-
-
-@media only screen and (min-width: 480px) {
-    .contact-container img {
-        height: 36px;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .contact-container img {
-        height: 48px;
-    }
-}
-
-@media (max-width: 600px) {
-    .topNav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navToggleButton {
-        display: flex;
-    }
-
-    .navLinks {
-        display: none;
-        width: 100%;
-    }
-
-    .navLinks.active {
-        display: flex;
-    }
-
-    .navLinks ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .navLinks ul li {
-        text-align: center;
-    }
-
-    .navLinks ul li a {
-        padding: 1rem;
-    }
 }
