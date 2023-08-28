@@ -71,6 +71,75 @@ body {
     background-color: #fff;
 }
 
+.titleBox {
+    width: 25%;
+    padding: 1.5rem;
+    margin: 50px auto;
+    background-color: #141527;
+    border: 2px solid #fff;
+    border-radius: .75rem;
+    font-size: 3vw;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    box-shadow: 4px 8px 8px #0b111d;
+}
+
+.contact-container {
+    background: #141527;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.contact-content {
+    color: #F1F1F1;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3px;
+}
+
+.contact-container img {
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+}
+
+.contact-container img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    transform: scale(1.01);
+    -webkit-transform: scale(1.00);
+}
+
+@media only screen and (min-width: 320px) {
+    .contact-container img {
+        height: 24px;
+        margin: 0 5px;
+    }
+}
+
+
+@media only screen and (min-width: 480px) {
+    .contact-container img {
+        height: 36px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .contact-container img {
+        height: 48px;
+    }
+}
+
 @media (max-width: 600px) {
     .topNav {
         flex-direction: column;
