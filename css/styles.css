@@ -63,6 +63,7 @@ body {
     justify-content: space-between;
     width: 31px;
     height: 21px;
+    cursor: pointer;
 }
 
 .hamburger {
