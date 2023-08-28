@@ -71,7 +71,7 @@ body {
 
 .titleBox {
     width: 25%;
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
     margin: 50px auto;
     background-color: #141527;
     border: 2px solid #fff;
