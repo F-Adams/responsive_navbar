@@ -82,19 +82,24 @@ body {
     }
 
     .navLinks {
-        display: block;
+        display: none;
         width: 100%;
     }
 
+    .navLinks.active {
+        display: flex;
+    }
+
     .navLinks ul {
+        width: 100%;
         flex-direction: column;
     }
 
-    .navLinks li {
+    .navLinks ul li {
         text-align: center;
     }
 
-    .navLinks li a {
+    .navLinks ul li a {
         padding: 1rem;
     }
 }
