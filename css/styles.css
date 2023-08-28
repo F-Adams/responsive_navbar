@@ -161,7 +161,7 @@ body {
         width: 100%;
     }
 
-    .navLinks.active {
+    .navLinks.responsive {
         display: flex;
     }
 
