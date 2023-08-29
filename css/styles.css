@@ -61,9 +61,11 @@ body {
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 31px;
-    height: 21px;
+    width: 35px;
+    height: 25px;
     cursor: pointer;
+    border: 0;
+    background: transparent;
 }
 
 .hamburger {
